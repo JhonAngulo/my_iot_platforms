@@ -4,11 +4,13 @@
   "description": "A simple IoT Platform - DB Module",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "setup": "DEBUG=storage_module:* node setup"
   },
   "author": "Jhon Manuel Angulo Moncada",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^3.15.0",
     "eslint": "^7.21.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
@@ -26,6 +28,10 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "inquirer": "^8.0.0",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.5.0"

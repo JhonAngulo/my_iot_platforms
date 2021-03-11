@@ -4,7 +4,8 @@
   "description": "A Simple IoT Platform - MQTT Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node server",
+    "dev": "DEBUG=mqtt_server:* nodemon server"
   },
   "author": "Jhon Manuel Angulo Moncada",
   "license": "MIT",

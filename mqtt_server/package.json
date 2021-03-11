@@ -1,0 +1,14 @@
+{
+  "name": "mqtt_server",
+  "version": "1.0.0",
+  "description": "A Simple IoT Platform - MQTT Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhon Manuel Angulo Moncada",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -26,5 +26,15 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "storage_module": "file:../storage_module",
+    "aedes": "^0.45.0",
+    "aedes-persistence-redis": "^8.0.0",
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "mqemitter-redis": "^4.1.0",
+    "redis": "^3.0.2"
   }
 }

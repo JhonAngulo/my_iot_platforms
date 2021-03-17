@@ -1,19 +1,20 @@
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es2021: true
+  'env': {
+    'browser': true,
+    'commonjs': true,
+    'es2021': true
   },
-  extends: [
+  'extends': [
     'plugin:vue/essential',
     'standard'
   ],
-  parserOptions: {
-    ecmaVersion: 12
+  'parserOptions': {
+    'ecmaVersion': 12
   },
-  plugins: [
+  'plugins': [
     'vue'
   ],
-  rules: {
+  'rules': {
+    'quote-props': ['error', 'always']
   }
 }

@@ -1,0 +1,36 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "A Simple IoT Platform - Web Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev" : "DEGUB=web-app:* nodemon server.js"
+  },
+  "author": "Jhon Manuel Angulo Moncada",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "nodemon": "^2.0.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "express": "^4.17.1"
+  }
+}

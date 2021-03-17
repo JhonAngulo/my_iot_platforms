@@ -1,15 +1,11 @@
-# agent
+'use strict'
 
-## Usage
-
-``` js
-
-const Agent = require('agent')
+const Agent = require('../')
 
 const agent = new Agent({
-  name: 'my-app',
+  name: 'myapp',
   username: 'admin',
-  interval: 2000,
+  interval: 2000
 })
 
 agent.addMetric('rss', function getRss () {
@@ -29,19 +25,17 @@ agent.addMetric('callbackMetric', function getRandomCallback (callback) {
 agent.connect()
 
 // This agent only
-agent.on('connected', handle)
-agent.on('disconnected', handle)
-agent.on('message', handle)
+agent.on('connected', handler)
+agent.on('disconnected', handler)
+agent.on('message', handler)
 
 // Other Agents
 agent.on('agent/connected', handler)
 agent.on('agent/disconnected', handler)
 agent.on('agent/message', handler)
 
-agent.on('agent(message', payload => {
+function handler (payload) {
   console.log(payload)
-})
+}
 
-setTimeout(() => agent.disconnected(), 20000)
-
-```
+setTimeout(() => agent.disconnect(), 10000)

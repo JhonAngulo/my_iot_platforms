@@ -24,7 +24,7 @@ io.on('connection', socket => {
 
   setInterval(() => {
     socket.emit('agent/message', { 'agent': 'xxx-yyy' })
-  })
+  }, 2000)
 })
 
 function handleFatalError (err) {

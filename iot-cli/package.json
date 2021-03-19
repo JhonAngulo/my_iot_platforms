@@ -1,0 +1,28 @@
+{
+  "name": "iot-cli",
+  "version": "1.0.0",
+  "description": "'A Simple IoT Platform - CLI'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhon Manuel Angulo Moncada",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}

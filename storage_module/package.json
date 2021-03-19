@@ -38,6 +38,7 @@
     "defaults": "^1.0.3",
     "dotenv": "^8.2.0",
     "inquirer": "^8.0.0",
+    "longjohn": "^0.2.12",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.5.0"

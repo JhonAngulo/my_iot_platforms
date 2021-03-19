@@ -25,7 +25,7 @@ async function setup () {
     database: process.env.PG_DB_DATABASE,
     username: process.env.PG_DB_USER,
     password: process.env.PG_DB_PASSWORD,
-    host: process.env.PG_DB_HOST,
+    host: process.env.DB_HOST || process.env.PG_DB_HOST,
     port: process.env.PG_DB_PORT,
     dialect: 'postgres',
     logging: msg => debug(msg),

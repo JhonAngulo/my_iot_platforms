@@ -4,6 +4,7 @@ module.exports = {
     'commonjs': true,
     'es2021': true
   },
+  'ignorePatterns': ['node_modules', 'public'],
   'extends': [
     'plugin:vue/essential',
     'standard'
